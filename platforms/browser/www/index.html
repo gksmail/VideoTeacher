@@ -75,15 +75,19 @@
                             <!-- Link to another page -->
                             <a href="about.html">About app</a>
                         </div>
-                    </div>
+                        <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+                           <string>need camera access to take pictures</string>
+                        </edit-config> 
+                   </div>
                 </div>
             </div>
+
             <!-- Bottom Toolbar-->
             <div class="toolbar">
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
                     <a href="#" class="link">Ссылка 1</a>
-                    <a href="#" class="link">Ссылка 2</a>
+                    <a href="#" class="link">О программе</a>
                 </div>
             </div>
         </div>
