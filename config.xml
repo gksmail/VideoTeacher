@@ -31,4 +31,15 @@
     <engine name="browser" spec="~5.0.3" />
     <plugin name="cordova.plugins.diagnostic" spec="~4.0.4" />
     <plugin name="cordova-plugin-media-capture" spec="~3.0.1" />
+
+     <feature id="blackberry.media.camera" />
+
+     <rim:permissions>
+       <rim:permit>use_camera</rim:permit>
+     </rim:permissions>
+
+    <feature name="Camera">
+      <param name="android-package" value="org.apache.cordova.CameraLauncher" />
+    </feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </widget>
