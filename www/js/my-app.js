@@ -13,6 +13,7 @@ var mainView = myApp.addView('.view-main', {
 
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
+    console.log(navigator.device.capture);
     document.querySelector("#takeVideo").addEventListener("touchend", function() {
         console.log("Take video");
         navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
