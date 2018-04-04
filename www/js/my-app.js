@@ -13,9 +13,32 @@ var mainView = myApp.addView('.view-main', {
 
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
+    document.querySelector("#takeVideo").addEventListener("touchend", function() {
+        console.log("Take video");
+        navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
+    }, false);
     console.log("Device is ready!");
 });
 
+
+function init() {
+    
+    
+    
+}
+
+function captureError(e) {
+    console.log("capture error: "+JSON.stringify(e));
+}
+
+function captureSuccess(s) {
+    console.log("Success");
+    console.dir(s[0]);
+    var v = "<video controls='controls'>";
+    v += "<source src='" + s[0].fullPath + "' type='video/mp4'>";
+    v += "</video>";
+    document.querySelector("#videoArea").innerHTML = v;
+}
 
 // Now we need to run the code that will be executed only for About page.
 
