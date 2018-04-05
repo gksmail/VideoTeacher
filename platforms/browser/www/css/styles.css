@@ -12,7 +12,30 @@
 
 .statusbar-overlay {
     background: #000000;
+	
 }
+/*Video*/
+#videoArea
+{
+	margin-top: 10px;
+}
+#videoArea video
+{
+	width: 80%;
+	margin-left: 10%;
+}
+.videoStep
+{
+	/*margin-left: 10%;*/
+	text-align: center;
+	
+}
+.videoStep img
+{
+	width: 80%;
+}
+/*-----*/
+/*Buttons*/
 .button_placeholder
 {
 	padding: 10px 0;
@@ -30,3 +53,71 @@
 {
 	background-color: #80bce6;
 }
+/*-----*/
+
+/*Text e.t.c.*/
+.app_title
+{
+	text-align: center;
+}
+hr
+{
+	border: 1px solid #a2a2a2;
+}
+
+.description_operation
+{
+	padding: 10px 0px;
+}
+/*-----*/
+
+/*Rating stars*/
+.rating_stars span
+{
+	font-size:50px;margin-left:10px;
+}
+/*-----*/
+
+/*Framework 7 Custom*/
+.list-block ul
+{
+	background: initial;
+}
+.list-block .item-content
+{
+	padding: 0 !important;
+}
+
+.list-block .item-inner
+{
+	padding: 0px 0px 0px 15px !important;
+}
+
+.list-block .item-inner
+{
+	display: initial !important;
+}
+.list-block .item-title.label
+{
+	text-align: center;
+	width: auto !important;
+	padding: 10px 0px 30px 0px!important;
+	font-size: 20px;
+}
+.list-block .item-input
+{
+	width: auto !important;
+	text-align: left;
+	margin-bottom: 20px;
+	padding: 10px 0px 10px 10px;
+	background: #FFF;
+}
+.list-block .item-input input
+{
+	height: 100%;
+}
+.list-block .item-title.label+.item-input
+{
+	margin-left: 0px;
+}
+/*-----*/
