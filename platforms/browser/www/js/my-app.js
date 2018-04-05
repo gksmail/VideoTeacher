@@ -14,10 +14,6 @@ var mainView = myApp.addView('.view-main', {
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     console.log(navigator.device.capture);
-    document.querySelector("#takeVideo").addEventListener("touchend", function() {
-        console.log("Take video");
-        navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
-    }, false);
     console.log("Device is ready!");
 });
 
@@ -66,3 +62,12 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
 //    myApp.alert('Here comes About page');
 })
 
+$$(document).on('pageInit', '.page[data-page="createStep"]', function (e) {
+    // Following code will be executed for page with data-page attribute equal to "about"
+//    myApp.alert('Here comes About page');
+    document.querySelector("#takeVideo").addEventListener("touchend", function() {
+        console.log("Take video");
+        navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
+    }, false);
+
+})
