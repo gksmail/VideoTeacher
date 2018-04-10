@@ -10,9 +10,6 @@
     "cordova-plugin-console": {
       "PACKAGE_NAME": "com.phonegap.videoteacher"
     },
-    "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.phonegap.videoteacher"
-    },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.phonegap.videoteacher"
     },
@@ -20,6 +17,9 @@
       "PACKAGE_NAME": "com.phonegap.videoteacher"
     },
     "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "com.phonegap.videoteacher"
+    },
+    "cordova-plugin-media-capture": {
       "PACKAGE_NAME": "com.phonegap.videoteacher"
     }
   },

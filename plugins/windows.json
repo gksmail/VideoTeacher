@@ -10,13 +10,13 @@
     "cordova-plugin-console": {
       "PACKAGE_NAME": "VideoTeacher"
     },
-    "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "VideoTeacher"
-    },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "VideoTeacher"
     },
     "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "VideoTeacher"
+    },
+    "cordova-plugin-media-capture": {
       "PACKAGE_NAME": "VideoTeacher"
     }
   },

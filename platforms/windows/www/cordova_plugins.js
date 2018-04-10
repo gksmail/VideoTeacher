@@ -17,6 +17,20 @@ module.exports = [
         ]
     },
     {
+        "id": "cordova-plugin-statusbar.statusbar",
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "pluginId": "cordova-plugin-statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
+    },
+    {
+        "id": "cordova-plugin-statusbar.StatusBarProxy",
+        "file": "plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js",
+        "pluginId": "cordova-plugin-statusbar",
+        "runs": true
+    },
+    {
         "id": "cordova-plugin-file.DirectoryEntry",
         "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
         "pluginId": "cordova-plugin-file",
@@ -256,30 +270,16 @@ module.exports = [
         "file": "plugins/cordova-plugin-media-capture/src/windows/CaptureProxy.js",
         "pluginId": "cordova-plugin-media-capture",
         "runs": true
-    },
-    {
-        "id": "cordova-plugin-statusbar.statusbar",
-        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-        "pluginId": "cordova-plugin-statusbar",
-        "clobbers": [
-            "window.StatusBar"
-        ]
-    },
-    {
-        "id": "cordova-plugin-statusbar.StatusBarProxy",
-        "file": "plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js",
-        "pluginId": "cordova-plugin-statusbar",
-        "runs": true
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-console": "1.0.7",
-    "cordova-plugin-file": "6.0.1",
-    "cordova-plugin-media-capture": "3.0.1",
     "cordova-plugin-statusbar": "1.0.1",
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-plugin-file": "5.0.0",
+    "cordova-plugin-media-capture": "2.0.0"
 };
 // BOTTOM OF METADATA
 });

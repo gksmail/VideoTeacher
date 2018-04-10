@@ -11,9 +11,11 @@
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
     <base href="/" target="_blank">
-    <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data: https: http: ;connect-src * 'self' data: https: http: ; default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src * ">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
 
 <!--
+    <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data: https: http: ;connect-src * 'self' data: https: http: ; default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src * ">
     <meta http-equiv="Content-Security-Policy" content="default-src *; connect-src *; script-src *; object-src *;">
     <meta http-equiv="X-Content-Security-Policy" content="default-src *; connect-src *; script-src *; object-src *;">
     <meta http-equiv="X-Webkit-CSP" content="default-src *; connect-src *; script-src 'unsafe-inline' 'unsafe-eval' *; object-src *;">
