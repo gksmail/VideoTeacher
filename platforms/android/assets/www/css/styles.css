@@ -1,0 +1,123 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+.statusbar-overlay {
+    background: #000000;
+	
+}
+/*Video*/
+#videoArea
+{
+	margin-top: 10px;
+}
+#videoArea video
+{
+	width: 80%;
+	margin-left: 10%;
+}
+.videoStep
+{
+	/*margin-left: 10%;*/
+	text-align: center;
+	
+}
+.videoStep img
+{
+	width: 80%;
+}
+/*-----*/
+/*Buttons*/
+.button_placeholder
+{
+	padding: 10px 0;
+	text-align: center;
+}
+.app_button_hor
+{
+	display: block;
+	color: #FFF;
+	padding: 20px 20px;
+	font-size: 20px;
+	background-color: #3d96d6;
+}
+.app_button:active
+{
+	background-color: #80bce6;
+}
+/*-----*/
+
+/*Text e.t.c.*/
+.app_title
+{
+	text-align: center;
+}
+hr
+{
+	border: 1px solid #a2a2a2;
+}
+
+.description_operation
+{
+	padding: 10px 0px;
+}
+/*-----*/
+
+/*Rating stars*/
+.rating_stars span
+{
+	font-size:50px;margin-left:10px;
+}
+/*-----*/
+
+/*Framework 7 Custom*/
+.list-block ul
+{
+	background: initial;
+}
+.list-block .item-content
+{
+	padding: 0 !important;
+}
+
+.list-block .item-inner
+{
+	padding: 0px 0px 0px 15px !important;
+}
+
+.list-block .item-inner
+{
+	display: initial !important;
+}
+.list-block .item-title.label
+{
+	text-align: center;
+	width: auto !important;
+	padding: 10px 0px 30px 0px!important;
+	font-size: 20px;
+}
+.list-block .item-input
+{
+	width: auto !important;
+	text-align: left;
+	margin-bottom: 20px;
+	padding: 10px 0px 10px 10px;
+	background: #FFF;
+}
+.list-block .item-input input
+{
+	height: 100%;
+}
+.list-block .item-title.label+.item-input
+{
+	margin-left: 0px;
+}
+/*-----*/

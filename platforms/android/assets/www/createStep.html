@@ -1,0 +1,69 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Запись этапа операции</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="createStep" class="page">
+        <div class="page-content">
+            <div class="content-block">
+              <form>
+                <div class="list-block">
+                  <ul>
+                    <li class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Этап операции</div>
+                            <div class="item-input">
+                              <input type="text" name="operation" placeholder="Наименование этапа"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                      <div class="item-inner"> 
+                         <div class="item-title label">Комментарии</div>
+                           <div class="item-input">
+                             <textarea name="description" placeholder="Описание"></textarea>
+                           </div>
+                         </div>
+                    </li>
+                  </ul>
+                 </div>
+                 <div class="list-block">
+                   <ul>
+                     <li>
+        		  <div class="button_placeholder">
+                             <button id="takeVideo" class="app_button_hor">Записать видео</button>
+                          </div>
+                     </li>
+                     <li>
+        		  <div class="button_placeholder">
+                             <a href="createStep.html"  class="app_button_hor">Следующий этап</a>
+                          </div>
+                     </li>
+                     <li>
+        		  <div class="button_placeholder">
+                             <a href="uploadOperation.html"  class="app_button_hor">Завершить</a>
+                          </div>
+                     </li>
+
+                  </ul>
+                </div>
+              </form>
+
+               <div id="videoArea"></div>
+            </div>
+        </div>
+    </div>
+</div>
