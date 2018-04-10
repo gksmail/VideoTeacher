@@ -3,7 +3,7 @@
   "display": "standalone",
   "name": "VideoTeacher",
   "short_name": "VideoTeacher",
-  "version": "com.phonegap.helloworld",
+  "version": "com.phonegap.videoteacher",
   "description": "A basic Framework7 template for PhoneGap.",
   "author": "Apache Cordova Team",
   "icons": [],

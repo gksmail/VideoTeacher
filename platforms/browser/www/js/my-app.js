@@ -13,6 +13,19 @@ var mainView = myApp.addView('.view-main', {
 
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
+
+    document.addEventListener('pendingcaptureresult', function(mediaFiles) {
+        // Do something with result
+      console.log(mediaFiles);
+
+    });
+
+    // pendingcaptureerror is fired if the capture call is unsuccessful
+    document.addEventListener('pendingcaptureerror', function(error) {
+        // Handle error case
+      console.log(error);
+    });
+    console.log(navigator.device);
     console.log(navigator.device.capture);
     console.log("Device is ready!");
 });
@@ -67,7 +80,9 @@ $$(document).on('pageInit', '.page[data-page="createStep"]', function (e) {
 //    myApp.alert('Here comes About page');
     document.querySelector("#takeVideo").addEventListener("touchend", function() {
         console.log("Take video");
-        navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
+
+        navigator.device.capture.captureImage(captureSuccess, captureError, {limit: 1});
+//        navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
     }, false);
 
 })

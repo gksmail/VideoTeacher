@@ -2,5 +2,6 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{VideoTeacher/node_modules}" />
+    <file url="file://$PROJECT_DIR$/platforms/browser/cordova" libraries="{VideoTeacher/platforms/browser/cordova/node_modules}" />
   </component>
 </project>

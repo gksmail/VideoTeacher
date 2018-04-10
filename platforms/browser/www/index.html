@@ -10,7 +10,16 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <base href="/" target="_blank">
+    <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data: https: http: ;connect-src * 'self' data: https: http: ; default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src * ">
+
+<!--
+    <meta http-equiv="Content-Security-Policy" content="default-src *; connect-src *; script-src *; object-src *;">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src *; connect-src *; script-src *; object-src *;">
+    <meta http-equiv="X-Webkit-CSP" content="default-src *; connect-src *; script-src 'unsafe-inline' 'unsafe-eval' *; object-src *;">
+
+   <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self' http://XX.XX.XX.XX:8084/mypp/">
+-->
 
     <!-- Required meta tags-->
     <meta charset="utf-8">
