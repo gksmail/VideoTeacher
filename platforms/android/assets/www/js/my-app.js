@@ -81,8 +81,8 @@ $$(document).on('pageInit', '.page[data-page="createStep"]', function (e) {
     document.querySelector("#takeVideo").addEventListener("touchend", function() {
         console.log("Take video");
 
-        navigator.device.capture.captureImage(captureSuccess, captureError, {limit: 1});
-//        navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
+//        navigator.device.capture.captureImage(captureSuccess, captureError, {limit: 1});
+        navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
     }, false);
 
 })

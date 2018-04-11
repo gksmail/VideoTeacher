@@ -263,8 +263,8 @@ module.exports.metadata =
     "cordova-plugin-console": "1.0.7",
     "cordova-plugin-statusbar": "1.0.1",
     "cordova.plugins.diagnostic": "4.0.4",
-    "cordova-plugin-file": "5.0.0",
-    "cordova-plugin-media-capture": "2.0.0"
+    "cordova-plugin-file": "6.0.1",
+    "cordova-plugin-media-capture": "3.0.1"
 }
 // BOTTOM OF METADATA
 });
